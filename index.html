@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-box">
+        <div class="top-part">
+            <div class="three-dots">
+                <div class="circle c1"></div>
+                <div class="circle c2"></div>
+                <div class="circle c3"></div>
+            </div>
+            <div class="top-text">To-Do List</div>
+        </div>
+
+        <div class="header-pink">TO - DO LIST</div>
+        
+        <div class="info-bar">
+            Total: <span id="num1">8</span> | Pending: <span id="num2">3</span> | Completed: <span id="num3">5</span>
+        </div>
+
+        <div class="input-div">
+            <div class="input-holder">
+                <span style="font-size: 1.2rem;">🌷</span>
+                <input type="text" id="myInput" placeholder="Enter task here...">
+            </div>
+            
+            <div class="level-row">
+                Priority: 
+                <label><input type="radio" name="prio" value="High"> High</label>
+                <label><input type="radio" name="prio" value="Medium" checked> Medium</label>
+                <label><input type="radio" name="prio" value="Low"> Low</label>
+            </div>
+            
+            <button class="btn1" id="add">Add Task</button>
+        </div>
+
+        <div class="list-container">
+            <div class="list-label">TASKS</div>
+            <ul id="myList">
+              
+            <span class="decoration">🦋</span>
+        </div>
+
+        <div class="bottom-div">
+            <button class="btn2" id="finish">Complete</button>
+            <button class="btn2" id="del">Delete All</button>
+            <button class="btn2" id="clear">Clear Done</button>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+        body {
+            background-color: #1a1a24; 
+            font-family: 'Nunito', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .main-box {
+            background-color: #8c7aea; 
+            width: 380px;
+            border-radius: 10px;
+            border: 2px solid #111;
+            box-shadow: 6px 6px 0px #111;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .top-part {
+            background-color: #2d2b33;
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #111;
+            position: relative;
+        }
+
+        .three-dots {
+            display: flex;
+            gap: 6px;
+            position: absolute;
+            left: 12px;
+        }
+
+        .circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid #000;
+        }
+        .c1 { background-color: #ff5f56; }
+        .c2 { background-color: #ffbd2e; }
+        .c3 { background-color: #27c93f; }
+
+        .top-text {
+            color: #d1d1d1;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin: 0 auto;
+            letter-spacing: 0.5px;
+        }
+
+        .header-pink {
+            background-color: #ff99cc; 
+            color: #4a2b91; 
+            text-align: center;
+            padding: 12px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            border-bottom: 2px solid #111;
+            letter-spacing: 1px;
+        }
+
+        .info-bar {
+            background-color: #6a5acd; 
+            color: white;
+            text-align: center;
+            padding: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+        }
+
+        .input-div {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-holder {
+            background: white;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            border: 2px solid #111;
+            margin-bottom: 12px;
+        }
+
+        #myInput {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 0.95rem;
+            font-family: inherit;
+            margin-left: 10px;
+        }
+
+        .level-row {
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .level-row input { accent-color: #ff99cc; }
+
+        .btn1 {
+            background-color: #ff99cc; 
+            border: 2px solid #111;
+            padding: 8px 25px;
+            font-family: inherit;
+            font-weight: 800;
+            color: #111;
+            cursor: pointer;
+            box-shadow: 2px 2px 0px #111;
+            border-radius: 4px;
+            transition: all 0.1s;
+        }
+
+        .btn1:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px #111;
+        }
+
+        .list-container {
+            padding: 0 15px 15px 15px;
+            position: relative; 
+        }
+
+        .list-label {
+            text-align: center;
+            color: #333;
+            font-size: 0.8rem;
+            font-weight: 800;
+            background-color: rgba(0,0,0,0.15);
+            border-radius: 20px;
+            display: inline-block;
+            padding: 4px 15px;
+            margin: 0 auto 10px auto;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            letter-spacing: 1px;
+        }
+
+        ul { list-style: none; padding: 0; margin: 0; position: relative; z-index: 2;}
+
+        li {
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px;
+            border: 1px dashed transparent;
+        }
+
+        li input[type="checkbox"] {
+            width: 14px;
+            height: 14px;
+            accent-color: #fff;
+            cursor: pointer;
+        }
+
+        li.done {
+            border: 1px dashed rgba(255,255,255,0.6);
+            border-radius: 6px;
+        }
+
+        li .icon { font-size: 0.8rem; }
+        li .txt { flex-grow: 1; }
+        li .check-mark { font-weight: 800; color: white; display: none; }
+        
+        li.done .check-mark { display: inline; }
+
+        .decoration {
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+            font-size: 2.5rem;
+            opacity: 0.7; 
+            z-index: 1; 
+            pointer-events: none; 
+        }
+
+        .bottom-div {
+            background-color: #7b64db; 
+            border-top: 2px solid #111;
+            padding: 15px 10px;
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        .btn2 {
+            flex: 1;
+            background-color: #ff99cc; 
+            border: 2px solid #111;
+            padding: 8px 0;
+            font-family: inherit;
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: #111;
+            cursor: pointer;
+            box-shadow: 2px 2px 0px #111;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .btn2:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px #111;
+        }
