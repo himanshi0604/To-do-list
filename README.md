@@ -32,3 +32,7 @@ Users can assign priority to tasks:
 High Priority ⚠ – Appears at the top of the list
 Medium Priority ● – Default priority
 Low Priority ●
+
+-Preview
+![WhatsApp Image 2026-03-18 at 21 31 30](https://github.com/user-attachments/assets/a1e29feb-5c46-4b78-8ec3-1e1357f767fe)
+
